@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-cloud-sun"></i> Weather App</h1>
+        <div class="search-box">
+            <input type="text" placeholder="Enter city name" id="city-input">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="weather-info" id="weather-info">
+            <div class="weather-details hidden" id="weather-details">
+                <h2 id="city-name"><i class="fas fa-map-marker-alt"></i> <span></span></h2>
+                <div class="temperature">
+                    <span id="temperature"></span>
+                    <span class="unit">°C</span>
+                </div>
+                <img id="weather-icon" src="" alt="weather icon">
+                <p id="description"></p>
+                <div class="additional-info">
+                    <p>
+                        <i class="fas fa-tint"></i> Humidity
+                        <span id="humidity"></span>%
+                    </p>
+                    <p>
+                        <i class="fas fa-wind"></i> Wind Speed
+                        <span id="wind-speed"></span> m/s
+                    </p>
+                </div>
+            </div>
+            <p class="error-message hidden" id="error-message">
+                <i class="fas fa-exclamation-circle"></i> City not found. Please try again.
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
